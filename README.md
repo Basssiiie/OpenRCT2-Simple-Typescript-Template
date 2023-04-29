@@ -1,9 +1,11 @@
-# Simple and minimal OpenRCT2 plugin template with Typescript
+# Simple OpenRCT2 plugin template with Typescript
+
+A simple and minimal template for OpenRCT2 plugins, using Typescript and including hot reload support.
 
 ## How to start
 
 1. Install latest version of [Node](https://nodejs.org/en/) and make sure to include NPM and enable the "Add to PATH" option during installation.
-2. Fork or download the project to a location of your choice on your PC.
+2. Use the green "Use this template" button in the top right corner of this page, or download the project to a location of your choice on your PC.
 3. Open a terminal or command prompt.
 4. Use `cd` to change your current directory to the root folder of this project.
 5. Run `npm install` to install the project's dependencies.
