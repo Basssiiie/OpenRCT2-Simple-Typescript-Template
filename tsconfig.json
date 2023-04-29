@@ -1,0 +1,24 @@
+{
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"module": "ES2020",
+		"moduleResolution": "node",
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitAny": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"outDir": "out",
+		"strict": true,
+		"target": "es5",
+		"lib": [ "es5" ]
+	},
+	"include": [
+		"./lib/**/*.ts",
+		"./src/**/*.ts",
+	],
+	"noEmit": true
+}
