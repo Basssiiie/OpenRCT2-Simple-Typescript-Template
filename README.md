@@ -1,6 +1,11 @@
 # Simple OpenRCT2 plugin template with Typescript
 
-A simple and minimal template for OpenRCT2 plugins, using Typescript and including hot reload support.
+A simple and minimal template for OpenRCT2 plugins, using Typescript, without any unnecessary extra's.
+
+Also supports:
+- Automatic plugin reload in OpenRCT2 (hot reload);
+- Out of the box minification to improve file sizes;
+- Support for external NPM packages (like FlexUI).
 
 ## How to start
 
@@ -14,6 +19,7 @@ A simple and minimal template for OpenRCT2 plugins, using Typescript and includi
    - Alternatively you can download the file from Github [here](https://raw.githubusercontent.com/OpenRCT2/OpenRCT2/develop/distribution/openrct2.d.ts).
    - Another option is to make a symbolic link instead of copying the file, which will keep the file up to date whenever you install new versions of OpenRCT2.
 7. In `./src/plugin.ts`, change the name and author of the plugin to your liking.
+8. In `./rollup.config.js`, change the filename of the outputted plugin.
 
 ---
 
@@ -35,11 +41,13 @@ Will start a script that will automatically run `npm run build:dev` every time y
 
 ### Output paths
 
-These output paths can be changed in `rollup.config.js`. In this file you can also change the outputted file name of the plugin.
+These output paths can be changed in `rollup.config.js`. In this file you can also change the outputted filename of the plugin.
 
 ---
 
 ## Access game logs
+
+When your plugin is not loading properly, it may be useful to be able to read the logs of the game to see if there are any errors. Furthermore, if you use the `console.log` function, the resulting logs can be read here as well.
 
 ### Windows
 
