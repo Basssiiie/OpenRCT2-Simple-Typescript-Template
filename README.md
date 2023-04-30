@@ -55,11 +55,11 @@ When your plugin is not loading properly, it may be useful to be able to read th
 2. Launch the `openrct2.com` file located there (the MS-DOS application).
 	- If file extensions are hidden, make sure to [enable them](https://support.microsoft.com/en-us/windows/common-file-name-extensions-in-windows-da4a4430-8e76-89c5-59f7-1cdbbc75cb01).
 
-### Linux/MacOS
+### MacOS
 
 1. Launch a terminal or another command-line prompt.
 2. Using the `cd` command, navigate to the folder where [OpenRCT2 is installed](#openrct2-installation-directory).
-3. Run `./openrct2 --verbose` to launch OpenRCT2 with logging enabled.
+3. Run `open OpenRCT2.app/Contents/MacOS/OpenRCT2` to launch OpenRCT2 with logging enabled.
 
 ---
 
@@ -80,8 +80,10 @@ This project supports the [OpenRCT2 hot reload feature](https://github.com/OpenR
 
 ### OpenRCT2 installation directory
 
-On Windows usually `C:/Users/<YOUR NAME>/Documents/OpenRCT2/bin/` when using the launcher or `C:/Program Files/OpenRCT2/` when an installer was used.
+- **Windows:** usually `C:/Users/<YOUR NAME>/Documents/OpenRCT2/bin/` when using the launcher or `C:/Program Files/OpenRCT2/` when an installer was used.
+- **MacOS:** the folder where the `OpenRCT2.app` application file was placed.
 
 ### OpenRCT2 user directory
 
-On Windows usually `Documents/OpenRCT2/config.ini`.
+- **Windows:** usually `Documents/OpenRCT2/` or `C:/Users/<YOUR NAME>/Documents/OpenRCT2/`.
+- **MacOS:** usually `/Users/<YOUR NAME>/Library/Application Support/OpenRCT2/`. Note that `Library` is a hidden folder in your user directory, so by default it will not show up in Finder.
