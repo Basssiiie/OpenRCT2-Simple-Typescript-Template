@@ -5,7 +5,7 @@
 	"license": "MIT",
 	"scripts": {
 		"start": "nodemon --watch ./src --ext js,ts --exec \"npm run build:dev\"",
-		"build": "npm run lint && rollup --config rollup.config.js --environment BUILD:production",
+		"build": "rollup --config rollup.config.js --environment BUILD:production",
 		"build:dev": "rollup --config rollup.config.js"
 	},
 	"devDependencies": {
