@@ -18,8 +18,7 @@ Also supports:
    - This file can usually be found in the [OpenRCT2 installation directory](#openrct2-installation-directory).
    - Alternatively you can download the file from Github [here](https://raw.githubusercontent.com/OpenRCT2/OpenRCT2/develop/distribution/openrct2.d.ts).
    - Another option is to make a symbolic link instead of copying the file, which will keep the file up to date whenever you install new versions of OpenRCT2.
-7. In `./src/plugin.ts`, change the name and author of the plugin to your liking.
-8. In `./rollup.config.js`, change the filename of the outputted plugin.
+7. In `./src/info.js`, change plugin info, such as name and author, to your liking.
 
 ---
 

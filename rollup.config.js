@@ -2,6 +2,7 @@ import resolve from "@rollup/plugin-node-resolve";
 import terser from "@rollup/plugin-terser";
 import typescript from "@rollup/plugin-typescript";
 import { getConfigHome, getDocumentsFolder } from "platform-folders";
+import { filename } from "./src/info.js";
 
 
 const options =
@@ -9,7 +10,7 @@ const options =
 	/**
 	 * Change the file name of the output file here.
 	 */
-	filename: "my-plugin.js",
+	filename: filename,
 
 	/**
 	 * Determines in what build mode the plugin should be build. The default here takes
