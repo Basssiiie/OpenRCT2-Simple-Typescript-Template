@@ -11,7 +11,6 @@ registerPlugin({
 	authors: info.authors,
 	type: info.type,
 	licence: info.license,
-	minApiVersion: info.minApiVersion ?? info.targetApiVersion,
 	targetApiVersion: info.targetApiVersion,
 	main: startup,
 });
