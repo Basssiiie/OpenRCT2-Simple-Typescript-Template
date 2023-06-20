@@ -1,3 +1,6 @@
+// @ts-ignore
+import * as info from "./info.js";
+
 function onClickMenuItem()
 {
 	// Write code here that should happen when the player clicks the menu item under the map icon.
@@ -15,6 +18,6 @@ export function startup()
 	// Register a menu item under the map icon:
 	if (typeof ui !== "undefined")
 	{
-		ui.registerMenuItem("My plugin", () => onClickMenuItem());
+		ui.registerMenuItem(info.name, () => onClickMenuItem());
 	}
 }
