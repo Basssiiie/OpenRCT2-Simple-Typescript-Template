@@ -2,8 +2,8 @@
 	"compilerOptions": {
 		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": true,
-		"module": "ES2020",
-		"moduleResolution": "node",
+		"module": "es2020",
+		"moduleResolution": "bundler",
 		"noFallthroughCasesInSwitch": true,
 		"noImplicitAny": true,
 		"noImplicitOverride": true,
@@ -11,13 +11,15 @@
 		"noImplicitThis": true,
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
-		"outDir": "out",
 		"strict": true,
+		// OpenRCT2 versions prior to v0.5.0 only support ES5.
+		// If you don't care about these, you can upgrade the lib and target to newer versions like ESNext.
+		"lib": ["es5"],
 		"target": "es5",
-		"lib": [ "es5" ]
+    	"types": ["@openrct2/types"],
+		"ignoreDeprecations": "6.0"
 	},
 	"include": [
-		"./lib/**/*.ts",
 		"./src/**/*.ts",
 	],
 	"noEmit": true

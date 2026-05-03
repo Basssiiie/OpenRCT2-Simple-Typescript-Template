@@ -1,9 +1,9 @@
 import resolve from "@rollup/plugin-node-resolve";
 import terser from "@rollup/plugin-terser";
 import typescript from "@rollup/plugin-typescript";
-import { exec } from "child_process";
-import { homedir } from "os";
-import { promisify } from "util";
+import { exec } from "node:child_process";
+import { homedir } from "node:os";
+import { promisify } from "node:util";
 
 
 const options =

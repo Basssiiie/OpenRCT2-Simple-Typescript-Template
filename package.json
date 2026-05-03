@@ -9,11 +9,12 @@
 		"build:dev": "rollup --config rollup.config.js"
 	},
 	"devDependencies": {
-		"@rollup/plugin-node-resolve": "^15.0.1",
-		"@rollup/plugin-terser": "^0.4.0",
-		"@rollup/plugin-typescript": "^11.0.0",
-		"nodemon": "^2.0.22",
-		"rollup": "^3.15.0",
+		"@openrct2/types": "^0.5.0",
+		"@rollup/plugin-node-resolve": "^16.0.3",
+		"@rollup/plugin-terser": "^1.0.0",
+		"@rollup/plugin-typescript": "^12.3.0",
+		"nodemon": "^3.1.14",
+		"rollup": "^4.60.2",
 		"tslib": "^2.5.0"
 	}
 }
