@@ -111,5 +111,4 @@ The following libraries and tools are used in this template:
 - **NodeJS** is the JavaScript engine used to develop and run code when the game is not running.
 - **NPM** is a library and package manager for JavasScript and TypeScript and can be used to install new packages and update existing packages in the project.
 - **TypeScript** is a expansion language to JavaScript that adds type checking when you are writing the code. It allows you to specify rules for how objects and values look like, so TypeScript can report back if your code follows these rules (instead of crashes or errors in-game).
-- **Rollup** bundles all source code, runs it through some plugins like TypeScript, and then outputs a single JavaScript plugin file.
-- **Nodemon** is the program that can watch a folder for changes and then trigger a specified action. It is used by `npm start` to watch the `./src/` folder and triggers `npm run build:dev` if any changes occur.
+- **Rollup** bundles all source code, runs it through some plugins like TypeScript, and then outputs a single JavaScript plugin file. Its built-in watch mode is used by `npm start` to rebuild the plugin whenever a source file changes.

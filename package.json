@@ -4,7 +4,7 @@
 	"type": "module",
 	"license": "MIT",
 	"scripts": {
-		"start": "nodemon --watch ./src --ext js,ts --exec \"npm run build:dev\"",
+		"start": "rollup --config rollup.config.js --watch",
 		"build": "rollup --config rollup.config.js --environment BUILD:production",
 		"build:dev": "rollup --config rollup.config.js"
 	},
@@ -13,8 +13,8 @@
 		"@rollup/plugin-node-resolve": "^16.0.3",
 		"@rollup/plugin-terser": "^1.0.0",
 		"@rollup/plugin-typescript": "^12.3.0",
-		"nodemon": "^3.1.14",
 		"rollup": "^4.60.2",
-		"tslib": "^2.5.0"
+		"tslib": "^2.5.0",
+		"typescript": "^6.0.3"
 	}
 }
